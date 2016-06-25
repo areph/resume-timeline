@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.string :kill
+      t.string :skill
       t.string :pr
 
       t.timestamps null: false
