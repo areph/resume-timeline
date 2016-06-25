@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'users' => 'users#index'
+
+  get 'users/show'
+
+  get 'users/new'
+  post 'users' => 'users#create'
+  # post 'users/new'
+
+  get 'users/edit'
+
   # get 'static_pages/home'
   #
   # get 'static_pages/help'
