@@ -11,9 +11,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new
-    @user.name = params[:name]
-    @user.email = params[:email]
+    user_params = params.require(:user)
+                        .permit(:name,
+                                :email,
+                                :skill,
+                                :pr)
+
+    if @user = User.create(user_params)
+      redirect_to '/users/index' #ブラウザにリダイレクトよろしく
+    else
+      render 'new' # viewを借りるよ
+    end
   end
 
   def edit

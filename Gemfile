@@ -8,6 +8,20 @@ gem 'rails', '4.2.6'
 
 group :development do
   gem 'sqlite3'
+
+  # pretty print on rails console
+  gem "hirb"
+  gem "hirb-unicode"
+  gem "pry"
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "pry-stack_explorer"
+  gem "pry-doc"
+  gem 'awesome_print'
+
+  # replaces the standard Rails error page with a much better and more useful error page
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 group :production do
   gem 'pg'
