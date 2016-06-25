@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  overview: MyText
+  from: 2016-06-26
+  to: 2016-06-26
+  scale: MyString
+  phase: MyString
+  architect: MyText
+  role: MyString
+  user_id: 
+
+two:
+  name: MyString
+  overview: MyText
+  from: 2016-06-26
+  to: 2016-06-26
+  scale: MyString
+  phase: MyString
+  architect: MyText
+  role: MyString
+  user_id: 
