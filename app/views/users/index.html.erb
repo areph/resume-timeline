@@ -1,8 +1,12 @@
-<h1>Users#index</h1>
+<h1 id='js-test_id'>Users#index</h1>
 <p>Find me in app/views/users/index.html.erb</p>
 <ul>
 <% @users.each do |user| %>
   <li><%= user.name %></li>
 <% end %>
 </ul>
+<div class="js-append">
+  ここについかされるよ
+</div>
 <%= link_to "新規作成", :controller => "users", :action => "new" %>
+<%= link_to 'hogefugaになるボタン', :controller => "users", :action => "js_test", remote: true %>

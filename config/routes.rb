@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'users/show'
 
+  get 'users/js_test' => 'users/js_test'
+
   get 'users/new'
   post 'users' => 'users#create'
   # post 'users/new'

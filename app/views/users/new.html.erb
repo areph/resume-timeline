@@ -1,15 +1,21 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
-<%= form_for(@user) do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :email %>
-<%= f.text_field :email %>
-<%= f.label :skill %>
-<%= f.text_area :skill %>
-<%= f.label :pr %>
-<%= f.text_area :pr %>
-
-<%= f.submit "登録" %>
-<% end %>
+  <h1>Users#new</h1>
+  <p>Find me in app/views/users/new.html.erb</p>
+  <%= form_for(@user) do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: "form-control"  %>
+    </div>
+    <div class="form-group">
+      <%= f.label :skill %>
+      <%= f.text_area :skill, class: "form-control"  %>
+    </div>
+    <div class="form-group">
+      <%= f.label :pr %>
+      <%= f.text_area :pr, class: "form-control"  %>
+    </div>
+    <%= f.submit "登録" %>
+  <% end %>

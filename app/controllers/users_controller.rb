@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   def show
   end
 
+  def js_test
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
